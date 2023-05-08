@@ -1,0 +1,207 @@
+.formContainer{
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+
+    .formWrapper{
+        background-color: rgb(204, 241, 248);
+        padding: 20px 60px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+        .logo{
+            color: rgb(55, 27, 83);
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .title{
+            color: rgb(55, 27, 83);
+            font-size: 15px;
+        }
+
+        form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        
+        img{
+            float: left;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        span{
+            float: left;
+            padding-left: 10px;
+            padding-top: 4px;
+        }
+        input{
+            border-radius: 10px;
+            padding: 10px 10px;
+            border: none;
+            border-bottom:2px solid rgb(78, 75, 80);
+            width: 250px;
+            background-color: rgb(244, 244, 244);
+            &::placeholder{
+                color: rgb(142, 142, 142);
+            }
+        }
+
+        button{
+            background-color: rgb(26, 83, 230);
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            font-weight: bold;
+            font-size: 13px;
+            cursor: pointer;
+        }
+      }
+      p{
+        margin-top: 8px;
+        font-size: 13px;
+        span{
+            color: rgb(31, 34, 255);
+        }
+      }
+    }
+  }
+  
+.home{
+    background-color: rgb(244, 244, 244);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container{
+        border: 1px solid rgb(204, 241, 248);
+        border-radius: 10px;
+        width: 65%;
+        height: 80%;
+        display: flex;
+        overflow: hidden;
+        
+        .sidebar{
+            flex: 1;
+            border-right: 1px solid rgb(55, 27, 83);
+            background-color: rgb(92, 44, 139);
+
+            .navbar{
+                display: flex;
+                align-items: center;
+                background-color: rgb(55, 27, 83);
+                height: 50px;
+                padding: 10px;
+                justify-content: space-between;
+                color: rgb(244, 244, 244);
+
+                .logo{
+                    font-weight: bold;
+                }
+
+                .user{
+                    display: flex;
+                    gap: 10px;
+
+                    img{
+                        background-color: #ddddf7;
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    button{
+                        background-color: #b4c5e4;
+                        border: none;
+                        border-radius: 5px;
+                        font-size: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .search{
+                border-bottom: 1px solid gray;
+
+                .searchForm{
+                    padding:10px;
+
+                    input{
+                        border:none;
+                        border-bottom: 1px solid gray;
+                        background-color: transparent;
+                        color: white;
+                        outline: none;
+                    }
+
+                }
+            }
+
+            .userChat{
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: white;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: rgb(39, 0, 72);
+                }
+                img{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .userChatInfo{
+                    
+                    span{
+                        display: block;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                    p{
+                        display: block;
+                        font-size: 14px;
+                        color: lightgray;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+
+        .chat{
+            flex: 2;
+            .chatInfo{
+                background-color: #b4c5e4;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                
+                .chatIcons{
+                    display: flex;
+                    gap: 15px;
+
+                    i{
+                        font-size: 15px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
