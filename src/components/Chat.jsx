@@ -1,5 +1,6 @@
 import React from 'react'
-
+import Messages from './Messages'
+import Input from './Input'
 const Chat = () => {
   return (
     <div className='chat'>
@@ -11,6 +12,8 @@ const Chat = () => {
         <i class="fa-solid fa-ellipsis"></i>
         </div>
       </div>
+      <Messages />
+      <Input />
     </div>
   )
 }
