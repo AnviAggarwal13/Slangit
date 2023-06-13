@@ -311,10 +311,15 @@
                     align-items: center;
                     justify-content: space-between;
                     gap: 10px;
+                    cursor: pointer;
 
                     i{
                         font-size: 20px;
                         color: rgb(47, 47, 47);
+                    }
+
+                    img{
+                        cursor: pointer;
                     }
                     button{
                         border: none;
