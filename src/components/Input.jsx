@@ -7,7 +7,6 @@ import {
   arrayUnion,
   doc,
   serverTimestamp,
-  setDoc,
   updateDoc,
 } from "firebase/firestore";
 import { db, storage } from "../firebase";
